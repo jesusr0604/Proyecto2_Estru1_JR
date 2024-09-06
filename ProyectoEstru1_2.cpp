@@ -6,6 +6,7 @@ using namespace std;
 using namespace std;
 
 int main() {
+    Arbol* tree= new Arbol();
     // Crear un array de 256 posiciones (una para cada caracter ASCII).
     int frecuencias[256] = { 0 };
 
@@ -26,6 +27,9 @@ int main() {
             cout << "'" << char(i) << "': " << frecuencias[i] << endl;
         }
     }
+    tree = new Arbol(frecuencias);
+
+    
 
     return 0;
 }

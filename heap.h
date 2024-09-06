@@ -14,5 +14,8 @@ public:
 	void heapifyup(int );
 	void heapifydown(int);
 	node* extraermin();
+	void setHeap(vector<node*>h);
+	vector<node*> getheap();
+
 };
 
